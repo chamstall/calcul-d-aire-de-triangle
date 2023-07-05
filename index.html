@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice calcul d'aire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container py-3 ">
+        <h1 class="text-center">Calcul de l'aire d'un triangle en m <sup>2</sup> </h1>
+        <form class="p-2 d-flex justify-content-center py-2">
+            <div class="col-12 col-md-9 ">
+                <div class="mb-3">
+                    <label for="input1" class="form-label">Saisissez la valeur de la base du triangle </label>
+                    <input type="text" class="form-control " id="input1" >
+                    <div id="msg1" class="text-danger"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="input2" class="form-label">Saisissez la valeur de la hauteur du triangle</label>
+                    <input type="text" class="form-control " id="input2">
+                    <div id="msg2" class="text-danger"></div>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-warning w-100">voir le resultat</button>
+                </div>
+            </div>
+        </form>
+        <div id="resultat" > 
+            <div id="div1" class=" d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-star" style="color: green;"></i>
+            </div>
+            <div id="div2"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

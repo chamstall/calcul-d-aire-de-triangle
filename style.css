@@ -1,0 +1,59 @@
+#resultat {
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: green;
+    position: relative;
+    animation: rotation 12s infinite linear;
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#div1 {
+    width: 70px;
+    height: 200px;
+    background-color: #FFC107;
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+
+#div2 {
+    width: 70px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 130px;
+}
+@media (max-width : 768px ){
+    #resultat {
+        height: 110px;
+        width: 145px;
+        padding: 20px;
+        font-size: 15px;
+    }
+    #div1{
+        height: 110px;
+        width: 50px;
+        left: 48px;
+    }
+    #div2{
+        height: 110px;
+        width: 50px;
+        left: 98px;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
