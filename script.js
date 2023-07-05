@@ -11,13 +11,18 @@ form.addEventListener("submit" , (e) => {
 
 let resultat = document.querySelector("#resultat");
 function response(){
-    resultat.innerHTML = ` le résulat est : <br> ${input1.value*input2.value/2}  m <sup>2</sup> `
     if(input1.value === "" || isNaN(input1.value)){
         msg1.innerHTML = "Veuillez saisir un nombre"
-        resultat.innerHTML = "" ;
+        resultat.classList.add("d-none");
     }
     if(input2.value === "" || isNaN(input2.value)){
         msg2.innerHTML = "Veuillez saisir un nombre"
-        resultat.innerHTML = "" ;
+        resultat.classList.add("d-none");
+    }
+    else{
+        msg1.innerHTML = "";
+        msg2.innerHTML = "";
+        resultat.innerHTML = ` le résulat est : <br> ${input1.value*input2.value/2}  m <sup>2</sup> `
+        resultat.classList.remove("d-none")
     }
 }
